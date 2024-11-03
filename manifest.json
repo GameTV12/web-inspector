@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Aqua Web Inspector",
+  "version": "1.0",
+  "description": "Tracks successful network requests for the current tab",
+  "permissions": ["webRequest", "activeTab", "tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "host_permissions": ["<all_urls>"]
+}
